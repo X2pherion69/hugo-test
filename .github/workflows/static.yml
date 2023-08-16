@@ -38,6 +38,8 @@ jobs:
         with:
           # Upload entire repository
           path: '.'
+      - name: Install package
+        run: npm install
       - name: Build TinaCMS
         env:
           TINA_PUBLIC_CLIENT_ID: f44b5d0d-6f24-4908-9faf-c0c1ff2464f0
