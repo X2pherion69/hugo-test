@@ -67,7 +67,7 @@ jobs:
         run: |
           hugo \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}"
+            --baseURL "ns1.biz.nf"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
