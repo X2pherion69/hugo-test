@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "/"
+baseURL = "https://X2pherion69.github.io/"
 title = "Twenty Twenty Hugo for Forestry"
 languageName = "En"
 languageCode = "en-us"
