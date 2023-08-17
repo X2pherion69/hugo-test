@@ -67,7 +67,7 @@ jobs:
         run: |
           hugo \
             --minify \
-            --baseURL=https://X2pherion69.github.io/hugo-test
+            --baseURL=https://duy.hongphu.com
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
@@ -76,9 +76,6 @@ jobs:
 
   # Deployment job
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
     steps:
