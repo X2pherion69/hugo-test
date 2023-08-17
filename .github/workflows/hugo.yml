@@ -67,7 +67,7 @@ jobs:
         run: |
           hugo \
             --minify \
-            --baseURL "https://X2pherion69.github.io/"
+            --baseURL=https://X2pherion69.github.io/hugo-test
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
