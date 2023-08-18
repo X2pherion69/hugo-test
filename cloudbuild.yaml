@@ -12,3 +12,5 @@ steps:
         dpkg -i hugo_0.117.0_linux-amd64.deb
         which hugo
         npm run build
+  - name: 'gcr.io/cloud-builders/gsutil'
+    args: ['-m', 'rsync', '-r', '/workspace/public/', 'gs://tina2.phunh.com/']
