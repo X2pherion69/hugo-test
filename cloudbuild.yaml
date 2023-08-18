@@ -4,5 +4,7 @@ steps:
     args:
       - install
   - name: "node"
+    entrypoint: "npm"
     args:
-      - npm run build
+      - run
+      - build
