@@ -4,7 +4,9 @@ steps:
     args:
       - install
   - name: "node"
-    entrypoint: "npm"
+    entrypoint: "bash"
     args:
-      - run
-      - build
+      - "-c"
+      - |
+        sudo apt install hugo
+        npm run build
