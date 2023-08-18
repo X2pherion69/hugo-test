@@ -3,7 +3,6 @@ steps:
     entrypoint: "npm"
     args:
       - install
-  - name: "docker"
-    entrypoint: "/bin/sh"
+  - name: "node"
     args:
-      - ls
+      - npm run build
